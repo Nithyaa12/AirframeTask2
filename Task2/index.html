@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <style type="text/css">
+            html {
+              margin: 0;
+              background: #282c34;
+              overflow: hidden;
+              color: whitesmoke;
+            }
+            h1{
+                margin-left: 38%;
+            }
+            img
+            {
+                margin-left: 40%;
+                margin-top: 2%;
+            }
+            .logob
+            {
+                margin-top: 5%;
+            }
+            .top
+            {
+                float: right;
+            }
+            form
+            {
+                margin-top: 8%;
+                margin-left: 35%;
+                font-size: 20px;
+            }
+          </style>
+    <title>Airframe Task 2</title>
+    <h1>Joe Biden's Secret Task <img class="top" src="img/image-removebg-preview (5).png" width="300px" height="150px"></h1>
+    <img src="img/talogo.png">
+    
+</head>
+<body>
+<form>
+    <label for="pswd">Enter the secret key </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "AirframeRocks";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="reality.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
